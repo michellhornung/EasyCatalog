@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B054C991772637D00353C5F /* EasyCatalogModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B054C971772637D00353C5F /* EasyCatalogModel.xcdatamodeld */; };
 		E4B858F9175EB51400C88BB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B858F8175EB51400C88BB0 /* UIKit.framework */; };
 		E4B858FB175EB51400C88BB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B858FA175EB51400C88BB0 /* Foundation.framework */; };
 		E4B858FD175EB51400C88BB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B858FC175EB51400C88BB0 /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B054C981772637D00353C5F /* EasyCatalogModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyCatalogModel.xcdatamodel; sourceTree = "<group>"; };
 		E4B858F5175EB51400C88BB0 /* EasyCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B858F8175EB51400C88BB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E4B858FA175EB51400C88BB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B054C9A177263A800353C5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B054C971772637D00353C5F /* EasyCatalogModel.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E4B858EC175EB51400C88BB0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		E4B858FE175EB51400C88BB0 /* EasyCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				4B054C9A177263A800353C5F /* Model */,
 				E4B85907175EB51400C88BB0 /* AppDelegate.h */,
 				E4B85908175EB51400C88BB0 /* AppDelegate.m */,
 				E4B85910175EB51400C88BB0 /* MainStoryboard.storyboard */,
@@ -176,6 +187,7 @@
 				E4B85905175EB51400C88BB0 /* main.m in Sources */,
 				E4B85909175EB51400C88BB0 /* AppDelegate.m in Sources */,
 				E4B85915175EB51400C88BB0 /* ViewController.m in Sources */,
+				4B054C991772637D00353C5F /* EasyCatalogModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +310,22 @@
 				E4B8591A175EB51400C88BB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B054C971772637D00353C5F /* EasyCatalogModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B054C981772637D00353C5F /* EasyCatalogModel.xcdatamodel */,
+			);
+			currentVersion = 4B054C981772637D00353C5F /* EasyCatalogModel.xcdatamodel */;
+			path = EasyCatalogModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E4B858ED175EB51400C88BB0 /* Project object */;
 }
