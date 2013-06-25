@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Catalogo" syncable="YES"/>
-    <entity name="Fotos" syncable="YES"/>
-    <entity name="Galeria" syncable="YES"/>
-    <entity name="Item" syncable="YES"/>
-    <entity name="Keyword" syncable="YES"/>
+    <entity name="CathalogItems" syncable="YES">
+        <attribute name="item_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subtitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="item_has_gallery" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ImageGaleries" syncable="YES"/>
+        <relationship name="item_has_keywords" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Keywords" syncable="YES"/>
+    </entity>
+    <entity name="Cathalogs" syncable="YES">
+        <attribute name="subtitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cathalog_has_items" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CathalogItems" syncable="YES"/>
+        <relationship name="cathalog_has_keywords" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Keywords" syncable="YES"/>
+    </entity>
+    <entity name="ImageGaleries" syncable="YES">
+        <attribute name="item_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gallery_has_images" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Images" syncable="YES"/>
+    </entity>
+    <entity name="Images" syncable="YES">
+        <attribute name="image_src" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Keywords" syncable="YES">
+        <attribute name="keyword_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Catalogo" positionX="-63" positionY="-18" width="128" height="43"/>
-        <element name="Item" positionX="-54" positionY="-9" width="128" height="43"/>
-        <element name="Galeria" positionX="-36" positionY="0" width="128" height="43"/>
-        <element name="Fotos" positionX="-18" positionY="18" width="128" height="43"/>
-        <element name="Keyword" positionX="0" positionY="36" width="128" height="43"/>
+        <element name="Cathalogs" positionX="-630" positionY="-333" width="126" height="103"/>
+        <element name="Images" positionX="-236" positionY="-117" width="128" height="58"/>
+        <element name="ImageGaleries" positionX="-333" positionY="-270" width="128" height="73"/>
+        <element name="CathalogItems" positionX="-524" positionY="-106" width="128" height="133"/>
+        <element name="Keywords" positionX="-765" positionY="-175" width="128" height="58"/>
     </elements>
 </model>
