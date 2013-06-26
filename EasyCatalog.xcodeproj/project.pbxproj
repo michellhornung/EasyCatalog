@@ -19,6 +19,7 @@
 		E4B8590F175EB51400C88BB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B8590E175EB51400C88BB0 /* Default-568h@2x.png */; };
 		E4B85912175EB51400C88BB0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B85910175EB51400C88BB0 /* MainStoryboard.storyboard */; };
 		E4B85915175EB51400C88BB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B85914175EB51400C88BB0 /* ViewController.m */; };
+		E4C3315E177A65D50011318E /* photocamera.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C3315D177A65D40011318E /* photocamera.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E4B85911175EB51400C88BB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E4B85913175EB51400C88BB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E4B85914175EB51400C88BB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4C3315D177A65D40011318E /* photocamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photocamera.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		E4B858FF175EB51400C88BB0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4C3315D177A65D40011318E /* photocamera.png */,
 				E4B85900175EB51400C88BB0 /* EasyCatalog-Info.plist */,
 				E4B85901175EB51400C88BB0 /* InfoPlist.strings */,
 				E4B85904175EB51400C88BB0 /* main.m */,
@@ -174,6 +177,7 @@
 				E4B8590D175EB51400C88BB0 /* Default@2x.png in Resources */,
 				E4B8590F175EB51400C88BB0 /* Default-568h@2x.png in Resources */,
 				E4B85912175EB51400C88BB0 /* MainStoryboard.storyboard in Resources */,
+				E4C3315E177A65D50011318E /* photocamera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
