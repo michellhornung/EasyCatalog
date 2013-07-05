@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4B054C991772637D00353C5F /* EasyCatalogModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B054C971772637D00353C5F /* EasyCatalogModel.xcdatamodeld */; };
+		4B17D4911785DCA900B99854 /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D4901785DCA900B99854 /* Catalog.m */; };
+		4B17D4971785DFDA00B99854 /* CatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D4961785DFDA00B99854 /* CatalogViewController.m */; };
+		4B17D49A1785DFF500B99854 /* EditCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D4991785DFF500B99854 /* EditCatalogViewController.m */; };
+		4B17D49C1785E23700B99854 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B17D49B1785E23700B99854 /* CoreData.framework */; };
 		E4B858F9175EB51400C88BB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B858F8175EB51400C88BB0 /* UIKit.framework */; };
 		E4B858FB175EB51400C88BB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B858FA175EB51400C88BB0 /* Foundation.framework */; };
 		E4B858FD175EB51400C88BB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B858FC175EB51400C88BB0 /* CoreGraphics.framework */; };
@@ -24,6 +28,14 @@
 
 /* Begin PBXFileReference section */
 		4B054C981772637D00353C5F /* EasyCatalogModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyCatalogModel.xcdatamodel; sourceTree = "<group>"; };
+		4B17D48F1785DCA900B99854 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
+		4B17D4901785DCA900B99854 /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalog.m; sourceTree = "<group>"; };
+		4B17D4951785DFDA00B99854 /* CatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogViewController.h; sourceTree = "<group>"; };
+		4B17D4961785DFDA00B99854 /* CatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogViewController.m; sourceTree = "<group>"; };
+		4B17D4981785DFF500B99854 /* EditCatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCatalogViewController.h; sourceTree = "<group>"; };
+		4B17D4991785DFF500B99854 /* EditCatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCatalogViewController.m; sourceTree = "<group>"; };
+		4B17D49B1785E23700B99854 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4B17D49D1785E66F00B99854 /* EditCatalogViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditCatalogViewControllerDelegate.h; sourceTree = "<group>"; };
 		E4B858F5175EB51400C88BB0 /* EasyCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B858F8175EB51400C88BB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E4B858FA175EB51400C88BB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B17D49C1785E23700B99854 /* CoreData.framework in Frameworks */,
 				E4B858F9175EB51400C88BB0 /* UIKit.framework in Frameworks */,
 				E4B858FB175EB51400C88BB0 /* Foundation.framework in Frameworks */,
 				E4B858FD175EB51400C88BB0 /* CoreGraphics.framework in Frameworks */,
@@ -61,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				4B054C971772637D00353C5F /* EasyCatalogModel.xcdatamodeld */,
+				4B17D48F1785DCA900B99854 /* Catalog.h */,
+				4B17D4901785DCA900B99854 /* Catalog.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -68,6 +83,7 @@
 		E4B858EC175EB51400C88BB0 = {
 			isa = PBXGroup;
 			children = (
+				4B17D49B1785E23700B99854 /* CoreData.framework */,
 				E4B858FE175EB51400C88BB0 /* EasyCatalog */,
 				E4B858F7175EB51400C88BB0 /* Frameworks */,
 				E4B858F6175EB51400C88BB0 /* Products */,
@@ -102,6 +118,11 @@
 				E4B85913175EB51400C88BB0 /* ViewController.h */,
 				E4B85914175EB51400C88BB0 /* ViewController.m */,
 				E4B858FF175EB51400C88BB0 /* Supporting Files */,
+				4B17D4951785DFDA00B99854 /* CatalogViewController.h */,
+				4B17D4961785DFDA00B99854 /* CatalogViewController.m */,
+				4B17D4981785DFF500B99854 /* EditCatalogViewController.h */,
+				4B17D4991785DFF500B99854 /* EditCatalogViewController.m */,
+				4B17D49D1785E66F00B99854 /* EditCatalogViewControllerDelegate.h */,
 			);
 			path = EasyCatalog;
 			sourceTree = "<group>";
@@ -192,6 +213,9 @@
 				E4B85909175EB51400C88BB0 /* AppDelegate.m in Sources */,
 				E4B85915175EB51400C88BB0 /* ViewController.m in Sources */,
 				4B054C991772637D00353C5F /* EasyCatalogModel.xcdatamodeld in Sources */,
+				4B17D4911785DCA900B99854 /* Catalog.m in Sources */,
+				4B17D4971785DFDA00B99854 /* CatalogViewController.m in Sources */,
+				4B17D49A1785DFF500B99854 /* EditCatalogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

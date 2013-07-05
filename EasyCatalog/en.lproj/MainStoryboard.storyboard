@@ -49,6 +49,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Mgv-Zq-DID" kind="push" id="N7C-cJ-4i0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -69,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="513" y="-64"/>
         </scene>
-        <!--Table View Controller - New Catalog-->
+        <!--Edit Catalog View Controller - New Catalog-->
         <scene sceneID="hbG-A1-Qqr">
             <objects>
-                <tableViewController id="Iea-rb-LtC" sceneMemberID="viewController">
+                <tableViewController id="Iea-rb-LtC" customClass="EditCatalogViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="center" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="WA5-eV-gm1">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,19 +185,24 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="oXe-9D-fra"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="eqG-8B-UCL">
                             <connections>
-                                <segue destination="Mgv-Zq-DID" kind="push" id="rfN-vB-4qO"/>
+                                <action selector="save:" destination="Iea-rb-LtC" id="zct-Jo-hfa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="keywordTextField" destination="wwH-er-C1y" id="USY-9H-sQR"/>
+                        <outlet property="subtitleTextField" destination="rS6-Sw-AdO" id="D9x-bA-ZtO"/>
+                        <outlet property="titleTextField" destination="Iww-td-ayg" id="cLd-ni-Iep"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAY-rO-Tx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="957" y="-64"/>
+            <point key="canvasLocation" x="1055" y="-544"/>
         </scene>
-        <!--Table View Controller - Catalog Title-->
+        <!--Catalog View Controller - Catalog Title-->
         <scene sceneID="Kds-UX-cJu">
             <objects>
-                <tableViewController id="Mgv-Zq-DID" sceneMemberID="viewController">
+                <tableViewController id="Mgv-Zq-DID" customClass="CatalogViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EaO-ka-z6f">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -207,7 +215,7 @@
                         <sections>
                             <tableViewSection id="SX0-Ps-MMY">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="pgU-CA-eu6" detailTextLabel="1Zl-vL-yy4" style="IBUITableViewCellStyleValue1" id="QWv-FK-WFW">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellCatalog" textLabel="pgU-CA-eu6" detailTextLabel="1Zl-vL-yy4" style="IBUITableViewCellStyleValue1" id="QWv-FK-WFW">
                                         <rect key="frame" x="0.0" y="44" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -245,12 +253,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Catalog Title" id="5pR-2c-KFm">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Zw8-ga-EPB"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ksh-ga-VA7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ksh-ga-VA7">
+                            <connections>
+                                <segue destination="Iea-rb-LtC" kind="push" id="RSL-Gx-SzH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Zf-2H-hHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1463" y="-64"/>
+            <point key="canvasLocation" x="1586" y="-64"/>
         </scene>
         <!--Table View Controller - Catalog Item-->
         <scene sceneID="nZG-Gu-Q09">
@@ -315,7 +327,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSL-SW-aka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937" y="-64"/>
+            <point key="canvasLocation" x="2201" y="-64"/>
         </scene>
         <!--Table View Controller - Add Item-->
         <scene sceneID="Yrb-QI-4cw">
@@ -476,7 +488,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQg-6h-yMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2388" y="-793"/>
+            <point key="canvasLocation" x="2809" y="-425"/>
         </scene>
         <!--View Controller - Item Description-->
         <scene sceneID="m2A-bw-Fsa">
@@ -560,13 +572,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sP0-Ww-qjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2393" y="-64"/>
+            <point key="canvasLocation" x="2809" y="324"/>
         </scene>
     </scenes>
     <resources>
         <image name="photocamera.png" width="24" height="24"/>
     </resources>
     <classes>
+        <class className="CatalogViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CatalogViewController.h"/>
+        </class>
+        <class className="EditCatalogViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditCatalogViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="keywordTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="subtitleTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
@@ -576,4 +600,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="RSL-Gx-SzH"/>
+    </inferredMetricsTieBreakers>
 </document>
