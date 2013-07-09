@@ -593,7 +593,6 @@
         <class className="EditCatalogViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditCatalogViewController.h"/>
             <relationships>
-                <relationship kind="action" name="save:"/>
                 <relationship kind="outlet" name="keywordTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="subtitleTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
