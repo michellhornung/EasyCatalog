@@ -33,6 +33,10 @@
     [self.delegate editCatalogViewController:self saveCatalog:self.catalog];
 }
 
+- (IBAction)cancel:(id)sender {
+    [self.delegate editCatalogViewControllerCancel:self];
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];

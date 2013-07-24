@@ -78,7 +78,7 @@
     catalog.keyword = [catalog.keyword stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     
     if (catalog.title.length == 0 || catalog.subtitle.length == 0 || catalog.keyword.length == 0) {
-        NSLog(@"CatalogViewController > editCatalogViewController > Não foi possível salvar");
+        NSLog(@"CatalogViewController > saveCatalog > Não foi possível salvar");
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ERRO" message:@"Preencha todos os campos" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
         return;
@@ -96,14 +96,14 @@
     
 }
 
-/*
+
 -(void) editCatalogViewControllerCancel:(EditCatalogViewController *) viewController{
     
     [self.moc rollback];
     [self.navigationController popToViewController:self animated:YES];
     
 }
- */
+
 
 - (void)didReceiveMemoryWarning
 {
