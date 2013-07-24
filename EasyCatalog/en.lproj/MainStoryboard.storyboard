@@ -27,19 +27,12 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRR-NS-zAk">
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                                <state key="normal" title="New Catalog">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Iea-rb-LtC" kind="push" id="2Hh-Qh-93t"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEk-9W-23l">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="OVc-P6-2cQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="My Catalogs">
+                                <state key="normal" title="Catalogs">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -53,12 +46,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TEk-9W-23l" firstAttribute="leading" secondItem="vYH-uW-sA8" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KaJ-Rt-lSi"/>
-                            <constraint firstItem="yRR-NS-zAk" firstAttribute="top" secondItem="vYH-uW-sA8" secondAttribute="top" constant="149" id="Lhn-eP-pOn"/>
-                            <constraint firstAttribute="trailing" secondItem="TEk-9W-23l" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="OzH-cv-epS"/>
-                            <constraint firstItem="TEk-9W-23l" firstAttribute="top" secondItem="vYH-uW-sA8" secondAttribute="top" constant="220" id="Rvu-X0-EQU"/>
-                            <constraint firstItem="yRR-NS-zAk" firstAttribute="leading" secondItem="vYH-uW-sA8" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="k9I-jw-uz7"/>
-                            <constraint firstAttribute="trailing" secondItem="yRR-NS-zAk" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="qJH-AU-ofO"/>
+                            <constraint firstItem="TEk-9W-23l" firstAttribute="centerX" secondItem="vYH-uW-sA8" secondAttribute="centerX" type="default" id="8Rg-y5-AhH"/>
+                            <constraint firstItem="TEk-9W-23l" firstAttribute="top" secondItem="vYH-uW-sA8" secondAttribute="top" constant="195" id="Tff-Kd-mPk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="!EasyCatalog!" id="y7e-Gg-b9L">
@@ -590,12 +579,30 @@
     <resources>
         <image name="photocamera.png" width="24" height="24"/>
     </resources>
+    <classes>
+        <class className="CatalogViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CatalogViewController.h"/>
+        </class>
+        <class className="EditCatalogViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditCatalogViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="keywordTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="subtitleTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="2Hh-Qh-93t"/>
-    </inferredMetricsTieBreakers>
 </document>
