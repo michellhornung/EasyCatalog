@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4B054C991772637D00353C5F /* EasyCatalogModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B054C971772637D00353C5F /* EasyCatalogModel.xcdatamodeld */; };
+		4B089C0617B3055800A6C20E /* CatalogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B089C0517B3055800A6C20E /* CatalogItem.m */; };
+		4B089C0917B3079700A6C20E /* CatalogItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B089C0817B3079700A6C20E /* CatalogItemViewController.m */; };
+		4B089C0C17B307AC00A6C20E /* EditCatalogItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B089C0B17B307AC00A6C20E /* EditCatalogItemViewController.m */; };
 		4B17D4911785DCA900B99854 /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D4901785DCA900B99854 /* Catalog.m */; };
 		4B17D4971785DFDA00B99854 /* CatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D4961785DFDA00B99854 /* CatalogViewController.m */; };
 		4B17D49A1785DFF500B99854 /* EditCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17D4991785DFF500B99854 /* EditCatalogViewController.m */; };
@@ -28,6 +31,12 @@
 
 /* Begin PBXFileReference section */
 		4B054C981772637D00353C5F /* EasyCatalogModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EasyCatalogModel.xcdatamodel; sourceTree = "<group>"; };
+		4B089C0417B3055800A6C20E /* CatalogItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItem.h; sourceTree = "<group>"; };
+		4B089C0517B3055800A6C20E /* CatalogItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItem.m; sourceTree = "<group>"; };
+		4B089C0717B3079700A6C20E /* CatalogItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogItemViewController.h; sourceTree = "<group>"; };
+		4B089C0817B3079700A6C20E /* CatalogItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogItemViewController.m; sourceTree = "<group>"; };
+		4B089C0A17B307AC00A6C20E /* EditCatalogItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCatalogItemViewController.h; sourceTree = "<group>"; };
+		4B089C0B17B307AC00A6C20E /* EditCatalogItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCatalogItemViewController.m; sourceTree = "<group>"; };
 		4B17D48F1785DCA900B99854 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catalog.h; sourceTree = "<group>"; };
 		4B17D4901785DCA900B99854 /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catalog.m; sourceTree = "<group>"; };
 		4B17D4951785DFDA00B99854 /* CatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogViewController.h; sourceTree = "<group>"; };
@@ -76,6 +85,8 @@
 				4B054C971772637D00353C5F /* EasyCatalogModel.xcdatamodeld */,
 				4B17D48F1785DCA900B99854 /* Catalog.h */,
 				4B17D4901785DCA900B99854 /* Catalog.m */,
+				4B089C0417B3055800A6C20E /* CatalogItem.h */,
+				4B089C0517B3055800A6C20E /* CatalogItem.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -123,6 +134,10 @@
 				4B17D4981785DFF500B99854 /* EditCatalogViewController.h */,
 				4B17D4991785DFF500B99854 /* EditCatalogViewController.m */,
 				4B17D49D1785E66F00B99854 /* EditCatalogViewControllerDelegate.h */,
+				4B089C0717B3079700A6C20E /* CatalogItemViewController.h */,
+				4B089C0817B3079700A6C20E /* CatalogItemViewController.m */,
+				4B089C0A17B307AC00A6C20E /* EditCatalogItemViewController.h */,
+				4B089C0B17B307AC00A6C20E /* EditCatalogItemViewController.m */,
 			);
 			path = EasyCatalog;
 			sourceTree = "<group>";
@@ -216,6 +231,9 @@
 				4B17D4911785DCA900B99854 /* Catalog.m in Sources */,
 				4B17D4971785DFDA00B99854 /* CatalogViewController.m in Sources */,
 				4B17D49A1785DFF500B99854 /* EditCatalogViewController.m in Sources */,
+				4B089C0617B3055800A6C20E /* CatalogItem.m in Sources */,
+				4B089C0917B3079700A6C20E /* CatalogItemViewController.m in Sources */,
+				4B089C0C17B307AC00A6C20E /* EditCatalogItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
